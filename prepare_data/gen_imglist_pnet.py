@@ -46,10 +46,10 @@ with open(os.path.join(dir_path, "%s" %(net),"train_%s_landmark.txt" % (net)), "
     print(len(neg_keep), len(pos_keep), len(part_keep))
 
     for i in pos_keep:
-        f.write(pos_keep[i])
+        f.write(pos[i])
     for i in neg_keep:
-        f.write(neg_keep[i])
+        f.write(neg[i])
     for i in part_keep:
-        f.write(part_keep[i])
+        f.write(part[i])
     for item in landmark:
         f.write(item)
